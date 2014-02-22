@@ -1,0 +1,27 @@
+DpSpatialIndex\Model\RasterRectangle:
+  type: entity
+  table: rasterRectangle
+  id:
+    _rasterRectangleId:
+      type: integer
+      column: rasterRectangleId
+      generator:
+        strategy: AUTO
+  fields:
+    _geoHashUR:
+      type: string
+      column: geoHashUR
+    _geoHashBL:
+      type: string
+      column: geoHashBL
+    _depth:
+      type: integer
+      column: depth
+    _lineString:
+      type: linestring
+      column: lineString
+  oneToMany:
+    _relations:
+      targetEntity: DpSpatialIndex\Model\RelationInRectangle
+      mappedBy: _rasterRectangle
+      cascade: [ALL]

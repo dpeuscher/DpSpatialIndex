@@ -1,0 +1,28 @@
+DpSpatialIndex\Model\RelationInRectangle:
+  type: entity
+  table: relationInRectangle
+  id:
+    _rasterRectangle:
+      associationKey: true
+      column: rasterRectangleId
+    _relation:
+      associationKey: true
+      column: relationId
+  fields:
+    _coverage:
+      type: float
+      column: coverage
+  manyToOne:
+    _rasterRectangle:
+      targetEntity: DpSpatialIndex\Model\RasterRectangle
+      inversedBy: _relations
+      cascade: [merge]
+      joinColumn:
+        name: rasterRectangleId
+        referencedColumnName: rasterRectangleId
+    _relation:
+      targetEntity: DpOsmParser\Model\Relation
+      cascade: [merge]
+      joinColumn:
+        name: relationId
+        referencedColumnName: relationId

@@ -1,0 +1,29 @@
+{
+    "name": "dpeuscher/dp-spatial-index",
+    "description": "Library Library for a database independent spatial index creation",
+    "license": "GPL-2.0",
+    "require": {
+        "php": ">=5.4",
+        "zendframework/zendframework": "2.3.x-dev",
+        "doctrine/doctrine-module": "0.9.x-dev",
+        "doctrine/doctrine-orm-module": "0.9.x-dev",
+        "phpunit/phpunit": "3.7.*",
+        "phpunit/php-file-iterator": "1.3.*",
+        "phpunit/php-text-template": "1.2.*",
+        "phpunit/php-code-coverage": "1.2.*",
+        "phpunit/php-timer": "1.0.*",
+        "phpunit/phpunit-mock-objects": "1.2.*",
+        "sebastian/diff": "dev-master",
+        "sebastian/exporter": "dev-master",
+        "predis/predis": "dev-master",
+        "chrisboulton/php-resque": ">=1.2",
+        "symfony/yaml": ">=2.1.0",
+        "dpeuscher/dp-zf-extensions": "dev-master",
+        "dpeuscher/dp-doctrine-extensions": "dev-master",
+        "dpeuscher/dp-phpunit-extensions": "dev-master",
+        "dpeuscher/dp-open-gis": "dev-master",
+        "dpeuscher/dp-profiler": "dev-master",
+        "dpeuscher/dp-asynchron-job": "dev-master",
+        "dpeuscher/dp-osm-parser": "dev-master"
+    }
+}
